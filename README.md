@@ -1,6 +1,6 @@
 # Urban-Crossroads-Rolling-Shutter-Dataset (UCR)
 
-The Urban Crossroads Rolling Shutter Dataset (**UCR**) based on Kubric: https://github.com/google-research/kubric.
+The world's first synthetic RS dataset for dynamic scene UCR (Urban Crossroads Rolling Shutter Dataset) based on Kubric: https://github.com/google-research/kubric. UCR contains seven challenging sequences with various strong dynamic objects and camera motions. It also provides the corresponding GS frames which have been captured at the intermediate exposure time of RS frames.
 
 | ![CDR](https://user-images.githubusercontent.com/60593268/177999356-436726ab-f548-40f1-8f83-20c27ab82447.png) | ![CDR2](https://user-images.githubusercontent.com/60593268/177999378-6d0a09c9-a27f-4cdd-ac6d-57fa3c61f663.png) |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -17,3 +17,27 @@ The Urban Crossroads Rolling Shutter Dataset (**UCR**) based on Kubric: https://
 | **trajectory**  |<video src='https://user-images.githubusercontent.com/60593268/178005872-3dc22208-cc02-4d50-b8ea-21b3bd379283.mp4' width=180/> | <video src='https://user-images.githubusercontent.com/60593268/178005891-6ecceba4-4208-4f36-8413-027d2ca7d708.mp4' width=180/> | <video src='https://user-images.githubusercontent.com/60593268/178005908-93972261-8ea1-4174-bade-918b07977936.mp4' width=180/> | <video src='https://user-images.githubusercontent.com/60593268/178005933-c6c02f60-fd55-40f3-81dc-5babc926a2fc.mp4' width=180/> | <video src='https://user-images.githubusercontent.com/60593268/178005961-387fcca2-6be9-41c9-982d-75510eae71b0.mp4' width=180/> | <video src='https://user-images.githubusercontent.com/60593268/178006004-42374e4a-005d-4707-b3f9-a150ebb0d98e.mp4' width=180/> | <video src='https://user-images.githubusercontent.com/60593268/178006025-3bb76ea2-2404-4001-b23b-c0b4a6df7454.mp4' width=180/> | 
 | **pose**        | pose01.txt                                                   | pose02.txt                                                   | pose03.txt                                                   | pose04.txt                                                   | pose05.txt                                                   | pose06.txt                                                   | pose07.txt                                                   |
 | **description** | Fix camera                                                   | Fix camera                                                   | Translation                                                  | Sine curve                                                   | Rotate along the x axis                                      | Rotate along the y axis                                      | Half of the heart curve                                      |
+
+
+## Camera
+
+- instriction
+```python
+intrinsics: 
+ [[888.88888889   0.         320.        ]
+ [  0.         888.88888889 240.        ]
+ [  0.           0.           1.        ]], 
+```
+
+- resolution
+```python
+resolution: 
+(640, 480)
+```
+
+- shutter
+```python
+FPS: 24 Hz
+exposure time: 1 / 24 * 0.05
+time delay between two scanlines: 1 / 24 * 0.5 / 480
+```
