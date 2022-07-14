@@ -1,4 +1,5 @@
 # Urban-Crossroads-Rolling-Shutter-Dataset (UCR)
+# under construction and comming soon.
 
 The world's first synthetic RS dataset for dynamic scene UCR (Urban Crossroads Rolling Shutter Dataset) based on Kubric: https://github.com/google-research/kubric. UCR contains seven challenging sequences with various strong dynamic objects and camera motions. It also provides the corresponding GS frames which have been captured at the intermediate exposure time of RS frames.
 
