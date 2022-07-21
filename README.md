@@ -58,6 +58,7 @@ sh main.sh
 
 
 ## Download
+The dataset can be download from [here]
 <!--
-The dataset can be download from [here](https://drive.google.com/drive/folders/1wkFJDsLUgnZfRel0c_TsSyis_moZPk29?usp=sharing).
+(https://drive.google.com/drive/folders/1wkFJDsLUgnZfRel0c_TsSyis_moZPk29?usp=sharing).
 -->
